@@ -56,7 +56,7 @@ with tf.Session() as sess: #创建会话
 |函数|名称|函数|名称|函数|名称|
 |-|-|-|-|-|-|
 |`tf.abs`|绝对值|`tf.maximum`|最大值|`tf.minimum`|最小值|
-|``||``||`tf.round`|科学取整|
+|`tf.ceil`|上取整|`tf.floor`|向下取整|`tf.round`|科学取整|
 |`tf.pow`|幂|`tf.square`|平方|`tf.sqrt`|开平方|
 |`tf.exp`|自然指数|`tf.log`|自然对数|`**`|任意指数|
 |`tf.sin`|正弦|`tf.cos`|余弦|`tf.tan`|正切|
@@ -64,8 +64,17 @@ with tf.Session() as sess: #创建会话
 |`tf.sinh`|双曲正弦|`tf.cosh`|双曲余弦|`；tf.tanh`|双曲正切|
 |`tf.asinh`|反双曲正弦|`tf.acosh`|反双曲余弦|`；tf.atanh`|反双曲正切|
 |`tf.sigmoid`|S型函数|||||
+
 注：
 1.科学取整是指四舍六入五凑偶
+2.
+双曲正弦函数是```sinh(x)=\frac{e^{x}-e^{-x}}{2}```
+双曲余弦函数是```cosh(x)=\frac{e^{x}+e^{-x}}{2}```
+双曲正切函数是```tanh(x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}```
+S型函数是```sigmoid(x)=\frac{1}{1+e^{-x}}```
+
+ax^{2} + by^{2} + c = 0
+3.S型函数是
 
 大学数学：
 
@@ -81,4 +90,5 @@ with tf.Session() as sess: #创建会话
 ### 第三天
 
 ## 链接
-[页面编辑器与教程](https://www.mdeditor.com)
+[Markdown在线编辑器](https://www.mdeditor.com)
+[LaTeX在线:吴文中数学公式编辑器](http://latex.91maths.com)
