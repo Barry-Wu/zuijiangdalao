@@ -10,6 +10,17 @@
 ## 三天之内学会tensorflow，把你天网都给扬了
 ### 第一天
 第一天当然是要把TF的基本功能了解了。
+TF程序的格式：
+```
+import tensorflow as tf
+
+...
+
+init = tf.global_variables_initializer() #初始化
+with tf.Session() as sess:
+    sess.run(init)
+    print(sess.run(...))
+```
 小学数学：
 
 |函数|名称|函数|名称|函数|名称|函数|名称|函数|名称|函数|名称|
@@ -18,6 +29,18 @@
 |`+=`|加上|`*=`|乘上|`//=`|商去|`==`|等于 |`<`|小于|`tf.minimum`|最小值|
 |`-`|减 |`/` |除 |`%`|余 |`!=`|不等于|`>=`|大于等于|`tf.constant`|常数|
 |`-=`|减去|`/=`|除上|`&=`|余上|||`<=`|小于等于|`tf.Variable`|变量|
+
+中学数学：
+
+|函数|名称|函数|名称|函数|名称|
+|-|-|-|-|-|-|
+|`tf.pow`|幂|`tf.square`|平方|`tf.sqrt`|开平方|
+|`tf.sin`|正弦|`tf.cos`|余弦|`tf.tan`|正切|
+|`tf.exp`|自然指数|`tf.log`|自然对数|`**`|任意指数|
+|`tf.asin`|反正|`tf.acos`|反余弦|`tf.atan`|反正切|
+|`tf.sinh`|双曲正弦|`tf.cosh`|双曲余弦|`；tf.tanh`|双曲正切|
+|``||``||``||
+
 ### 第二天
 
 ### 第三天
