@@ -51,16 +51,30 @@ with tf.Session() as sess: #创建会话
 |`-`|减 |`/` |除 |`%`|余 |`!=`|不等于|`>=`|大于等于|`tf.constant`|常数|
 |`-=`|减去|`/=`|除上|`&=`|余上|||`<=`|小于等于|`tf.Variable`|变量|
 
-中学数学：
+中学数学：（用的时候自变量一定要是浮点数！！！）
 
 |函数|名称|函数|名称|函数|名称|
 |-|-|-|-|-|-|
+|`tf.abs`|绝对值|`tf.maximum`|最大值|`tf.minimum`|最小值|
+|``||``||`tf.round`|科学取整|
 |`tf.pow`|幂|`tf.square`|平方|`tf.sqrt`|开平方|
-|`tf.sin`|正弦|`tf.cos`|余弦|`tf.tan`|正切|
 |`tf.exp`|自然指数|`tf.log`|自然对数|`**`|任意指数|
+|`tf.sin`|正弦|`tf.cos`|余弦|`tf.tan`|正切|
 |`tf.asin`|反正|`tf.acos`|反余弦|`tf.atan`|反正切|
 |`tf.sinh`|双曲正弦|`tf.cosh`|双曲余弦|`；tf.tanh`|双曲正切|
-|`tf.sigmoid`|S型曲线|||||
+|`tf.asinh`|反双曲正弦|`tf.acosh`|反双曲余弦|`；tf.atanh`|反双曲正切|
+|`tf.sigmoid`|S型函数|||||
+注：
+1.科学取整是指四舍六入五凑偶
+
+大学数学：
+
+|函数|名称|
+|-|-|
+|`tf.matmul`|矩阵乘|
+|`tf.matrix_determinant`|行列式|
+|`tf.matrix_inverse`|矩逆|
+|`tf.trace`|矩迹|
 
 ### 第二天
 
