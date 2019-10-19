@@ -98,30 +98,43 @@ with tf.Session() as sess: #创建会话
 |||
 
 复变函数：
+
 |函数|名称|
 |-|-|
 |`tf.real`|实部|
 |`tf.imag`|虚部|
 
 注：
+
 1.科学取整是指四舍六入五凑偶
+
 2.使用函数的时候一定要尽量使用浮点数！
-3.
-双曲正弦函数是```sinh(x)=\frac{e^{x}-e^{-x}}{2}```
-双曲余弦函数是```cosh(x)=\frac{e^{x}+e^{-x}}{2}```
-双曲正切函数是```tanh(x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}```
-S型函数是```sigmoid(x)=\frac{1}{1+e^{-x}}```
-误差函数是（待续）
-误差余函数是（待续）
+
+3.上述一些函数的公式
+
+|名称|公式|
+|-|-|
+|双曲正弦函数|`sinh(x)=\frac{e^{x}-e^{-x}}{2}`|
+|双曲余弦函数|`cosh(x)=\frac{e^{x}+e^{-x}}{2}`|
+|双曲正切函数|`tanh(x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}`|
+|S型函数|`sigmoid(x)=\frac{1}{1+e^{-x}}`|
+|误差函数|（待续）|
+|误差余函数|（待续）|
+
 这就和指数函数e^x过不去了是吧...
 ### 第二天
 
 ### 第三天
 
 ## 链接
-[LaTeX在线:吴文中数学公式编辑器](http://latex.91maths.com)
-[Matplotlib宝典](https://matplotlib.org/index.html)
-[Markdown在线编辑器](https://www.mdeditor.com)
-[NumPy+SciPy宝典](https://docs.scipy.org)
-[Python宝典](https://docs.python.org)
-[SymPy宝典](https://docs.sympy.org)
+LaTeX在线:吴文中数学公式编辑器：http://latex.91maths.com
+
+Matplotlib宝典：https://matplotlib.org/index.html
+
+Markdown在线编辑器]：https://www.mdeditor.com
+
+NumPy+SciPy宝典]：https://docs.scipy.org
+
+Python宝典：https://docs.python.org
+
+SymPy宝典：https://docs.sympy.org
