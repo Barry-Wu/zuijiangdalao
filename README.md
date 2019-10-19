@@ -1,4 +1,4 @@
-# 最犟大佬官网
+ # 最犟大佬官网
 ## 目录
 ### 三天之前
 ### 三天之内学会tensorflow，把你天网都给扬了
@@ -20,7 +20,7 @@ a=tf.Variable(...)
 b=tf.Variable(...)
 ...
 A=tf.constant(...)
-B=tf.constant(...)
+B=tf.co黄色nstant(...)
 ...
 x1=f1(a,b,...,A,B,...)
 x2=f2(a,b,...,A,B,...)
@@ -42,16 +42,27 @@ with tf.Session() as sess: #创建会话
 |numpy|np|`import numpy as np`|存储和处理大型矩阵的科学计算包|
 |tensorflow|tf|`import tensorflow as tf`|必须有这个！！！|
 
-小学数学：
+基本操作：
+基本语句：
+
+|名称|用法|
+|-|-|
+|`#...`|注释|
+|`'...'`或`"..."`|字符串|
+|`break`|跳出循环|
+|`if a:A elif b:B elif c:C ... else z:Z`|条件句|
+|`print(...,...,...)`|显示|
+
+小学数学函数：
 
 |函数|名称|函数|名称|函数|名称|函数|名称|函数|名称|函数|名称|
 |-|-|-|-|-|-|-|-|-|-|-|-|
 |`+`|加 |`*` |乘 |`//`|商 |`=`|赋值 |`>`|大于|`tf.maximum`|最大值|
 |`+=`|加上|`*=`|乘上|`//=`|商去|`==`|等于 |`<`|小于|`tf.minimum`|最小值|
-|`-`|减 |`/` |除 |`%`|余 |`!=`|不等于|`>=`|大于等于|`tf.constant`|常数|
-|`-=`|减去|`/=`|除上|`&=`|余上|||`<=`|小于等于|`tf.Variable`|变量|
+|`-`|减 |`/` |除 |`%`|余 |`!=`|不等于|`>=`|大于等于|`tf.constant(C)`|常数C|
+|`-=`|减去|`/=`|除上|`&=`|余上|||`<=`|小于等于|`tf.Variable(x)`|变量x|
 
-中学数学：
+中学数学函数：
 
 |函数|名称|函数|名称|函数|名称|
 |-|-|-|-|-|-|
@@ -60,9 +71,9 @@ with tf.Session() as sess: #创建会话
 |`tf.pow`|幂|`tf.square`|平方|`tf.sqrt`|开平方|
 |`tf.exp`|自然指数|`tf.log`|自然对数|`**`|任意指数|
 |`tf.sin`|正弦|`tf.cos`|余弦|`tf.tan`|正切|
-|`tf.complex(a,b)`|复数a+bi|`tf.real`|实部|`tf.imag`|虚部|
+|`tf.complex(a,b)`|复数a+bi|`tf.Variable(a+bj)`|变复数a+bi|`tf.constant(a+bj)`|常复数a+bi|
 
-大学数学：
+大学数学函数：
 
 |函数|名称|函数|名称|函数|名称|
 |-|-|-|-|-|-|
@@ -71,7 +82,7 @@ with tf.Session() as sess: #创建会话
 |`tf.asinh`|反双曲正弦|`tf.acosh`|反双曲余弦|`；tf.atanh`|反双曲正切|
 |`tf.sigmoid`|S型函数|`tf.erf`|误差函数|`tf.erfc`|误差余函数|
 
-线性代数：
+线性代数函数：
 
 |函数|名称|
 |-|-|
@@ -80,7 +91,7 @@ with tf.Session() as sess: #创建会话
 |`tf.matrix_inverse`|矩逆|
 |`tf.trace`|矩迹|
 
-数理统计：
+数理统计函数：
 
 |函数|名称|
 |-|-|
@@ -89,7 +100,8 @@ with tf.Session() as sess: #创建会话
 复变函数：
 |函数|名称|
 |-|-|
-|`tf.complex(a,b)`|复数a+bi|`tf.real`|实部|`tf.imag`|虚部|
+|`tf.real`|实部|
+|`tf.imag`|虚部|
 
 注：
 1.科学取整是指四舍六入五凑偶
@@ -107,5 +119,9 @@ S型函数是```sigmoid(x)=\frac{1}{1+e^{-x}}```
 ### 第三天
 
 ## 链接
-[Markdown在线编辑器](https://www.mdeditor.com)
 [LaTeX在线:吴文中数学公式编辑器](http://latex.91maths.com)
+[Matplotlib宝典](https://matplotlib.org/index.html)
+[Markdown在线编辑器](https://www.mdeditor.com)
+[NumPy+SciPy宝典](https://docs.scipy.org)
+[Python宝典](https://docs.python.org)
+[SymPy宝典](https://docs.sympy.org)
