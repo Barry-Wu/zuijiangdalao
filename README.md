@@ -115,14 +115,14 @@ with tf.Session() as sess: #创建会话
 
 |名称|公式|
 |-|-|
-|双曲正弦函数|`sinh(x)=\frac{e^{x}-e^{-x}}{2}`|
-|双曲余弦函数|`cosh(x)=\frac{e^{x}+e^{-x}}{2}`|
-|双曲正切函数|`tanh(x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}`|
-|S型函数|`sigmoid(x)=\frac{1}{1+e^{-x}}`|
-|误差函数|（待续）|
-|误差余函数|（待续）|
+|双曲正弦函数|sinh(x)=(e<sup>x</sup>-e<sup>-x</sup>)/2|
+|双曲余弦函数|cosh(x)=(e<sup>x</sup>+e<sup>-x</sup>)/2|
+|双曲正切函数|tanh(x)=(e<sup>x</sup>-e<sup>-x</sup>)/(e<sup>x</sup>+e<sup>-x</sup>)|
+|S型函数|sigmoid(x)=1/(1+e<sup>-x</sup>)|
+|误差函数|erf(x)=(2/√π)∫<sub>0</sub><sup>x</sup>e<sup>-x²</sup>dx|
+|误差余函数|erfc(x)=erf(x)=(2/√π)∫<sub>x</sub><sup>∞</sup>e<sup>-x²</sup>dx|
 
-这就和指数函数e^x过不去了是吧...
+这就和指数函数e<sup>x</sup>过不去了是吧...
 ### 第二天
 
 ### 第三天
@@ -132,9 +132,9 @@ LaTeX在线:吴文中数学公式编辑器：http://latex.91maths.com
 
 Matplotlib宝典：https://matplotlib.org/index.html
 
-Markdown在线编辑器]：https://www.mdeditor.com
+Markdown在线编辑器：https://www.mdeditor.com
 
-NumPy+SciPy宝典]：https://docs.scipy.org
+NumPy+SciPy宝典：https://docs.scipy.org
 
 Python宝典：https://docs.python.org
 
