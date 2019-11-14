@@ -1,18 +1,11 @@
-name: Python application
-
+name: PYTutorial  #标题
 on: [push]
 
-jobs:
+jobs: #内容
   build:
-
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-latest  #指定虚拟机环境
     steps:
-    - uses: actions/checkout@v1
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7
     - name: tutorial
       run: |
-        print("f")
+        a=2
+        print(a*a)
