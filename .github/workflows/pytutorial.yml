@@ -8,4 +8,5 @@ jobs: #内容
     - name: tutorial
       run: |
         a=2
-        print(a*a)
+        b=a*a
+        print(b)
