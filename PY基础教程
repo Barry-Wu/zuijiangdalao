@@ -1,8 +1,8 @@
 PY制图教程原装正版：https://docs.python.org/
+
 1 PY函数大全“Built-in Functions”
+
 1.1 PY基本函数大全
-abs()：绝对值
-像abs(-3)这种就是取绝对值，但是像abs(2+1j)这样就是取模。
 all()：全
 也称∀，？？？
 any()：有
@@ -136,11 +136,24 @@ vars()
 ？？？
 zip()
 ？？？
+
 1.2 PY数学函数大全（用带'math.'的函数，程序开头加import math）
+abs()：绝对值
+像abs(-3)这种就是取绝对值，但是像abs(2+1j)这样就是取模。
+
+math.ceil,math.floor
+上取整、下取整
+
+math.comb
+
+math.copysign
+
 1.3 PY数学复变函数大全 （用带'cmath.'的函数，程序开头加import cmath）
-complex()：复数
-比如complex(12,34)就是12+34j。注意，虚部为1也不能把1省略！！！
-数.real：实部
-数.imag：虚部
-cmath.phase(x)：相位
-cmath.polar(x)：极坐标化
+complex：复数
+比如complex(12,34)就是12+34j,也可以直接打12+34j。注意，虚部为1也不能把1省略！！！
+
+数.real,数.imag：实部、虚部
+
+cmath.phase：相位
+
+cmath.polar,cmath.rect：极坐标化、直角坐标化
