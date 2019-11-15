@@ -1,28 +1,31 @@
 PY制图教程原版：https://matplotlib.org/index.html
 那就来介绍PY制图能制哪些图吧：
-bar():柱状图
-contour()：？
-matplotlib.dates：？
-Ellipses：？
-fill()：填充图
-hist()：？
-imshow()：展示图片
-legend()：？
-loglog()，semilogx()，semilogy()：对数图，X对数图，Y对数图
-matplotlib.mathtext：公式图
-mplot3d：三维图
-matplotlib.path：路径图
-pcolormesh()：？
-pie()：饼状图
-plot()：函数图
-polar()：极坐标图
-quiver()：？
-scatter()：散点图
-specgram()：？
-streamplot()：？
-subplot()：多重图
-table()：列表图
-matplotlib.ticker：？
-matplotlib.widgets：交互图
-xkcd：手绘图
+bar                     柱状图
+contour                 描边图
+dates                   ？
+Ellipses                ？
+fill                    填充图
+hist                    ？
+imshow                  图片图
+legend                  ？
+loglog                  对数图         
+semilogx                横对数图
+semilogy                纵对数图
+mathtext                公式图
+mplot3d                 三维图
+path                    路径图
+pcolormesh              伪色图
+pie                     饼状图
+plot                    函数图
+polar                   极坐标图
+quiver                  ？
+scatter                 散点图
+specgram                ？
+streamplot              ？
+subplot                 多重图
+table                   列表图
+ticker                  ？
+widgets                 交互图
+xkcd                    手绘图
 使用例：
+？？？
