@@ -9,11 +9,11 @@ any()：有
 也称∃，？？？
 ascii()
 ？？？
-bin(),oct(),hex()：二进制化、八进制化、十六进制化
+【bin】二进制化、【oct】八进制化、【hex】十六进制化
 比如输入bin(123)得0b1111011，输入oct(123)得0o173，输入hex(123)得0x7b。
 由此可见，二、八、十六进制数开头分别会带'0b'、'0o'、'0x'，前面啥也不带的必为十进制数。
 在这俩函数这，我才发现很多函数的自变量可以是上述任何一种进制数，甚至True和False都行。
-bool()：逻辑值
+【bool】：逻辑值
 根据里面的算式情况，输出True或者False。
 bytearray()
 ？？？
@@ -21,7 +21,7 @@ bytes()
 ？？？
 callable()
 ？？？
-chr(),ord()：取符号、取编码
+【chr】取符号、【ord】取编码
 老师讲过，A对应65，a对应97，必背！那意味着，chr(65)是A，ord('A')是65,以此类推。
 调戏一下：chr(6324)+chr(9527)对应'ᢴ┷'，ord('👴')对应128116。（怎么没有114514...）
 classmethod()
@@ -38,15 +38,16 @@ divmod()
 ？？？
 enumerate()
 ？？？
-eval()：算式化
-可以把字符转化成数字。
-exec()
+【eval】算式化
+可以把字符等转化成数字。
+【exec】
 ？？？
-filter()
+【filter】
 ？？？
-float(),int()：取小数、取整数
-那就把各种数字转化成小数、整数呗。顺便一提，3.这种也叫浮点数。
-format()
+【float】转小数、【int】转整数
+那就把各种数字转化成小数、整数呗。
+顺便一提，3.这种也叫浮点数,0.1这种不够1的小数也可以写成.1。
+【format】
 ？？？
 frozenset()
 ？？？
@@ -64,7 +65,7 @@ id()
 ？？？
 __import__()
 ？？？
-input()：输入
+【input】输入
 输入啥就是啥憋。要在输入框前加提示语，就写成input('提示语')。
 什么？它说它像想数字，宁给的却是字符？试试用eval(input())、float(input())或int(input())。
 isinstance()
@@ -73,7 +74,7 @@ issubclass()
 ？？？
 iter()
 ？？？
-len()：长度
+【len】长度
 求字符串或数组的长度，直接上：len('boy♂next♂door')是13，len({5,1,3,2,4})是5。
 但是别忘了，学过C语言的都知道，len('\t\r\n')是3。
 但但是，len({1,2,2,3,3,3,4,4,5})还是5，看来它不喜欢重复的东西。
@@ -83,7 +84,7 @@ locals()
 ？？？
 map()
 ？？？
-max(),min()：最大值、最小值
+【max】最大值、【min】最小值
 比如输入min(-1,2,3,5,6)得6，输入min(-1,2,3,5,6)得-1。
 实数之间都可以比较。憋整那些复数、矩阵啥的！
 memoryview()
@@ -94,10 +95,10 @@ object()
 ？？？
 open()
 ？？？
-pow()：幂
+【pow】幂
 比如pow(3,3)就是3的3次方，27。和直接打3**3一样。
 但是，再加一个数，就变成了除法取余数，比如pow(3,3,5)就是3**3除5的余数，2。
-print()：显示
+【print】显示
 你最后想显示啥就把它print出来。
 显示字符的话要在字符外面加个''，连续显示东西的话，在同一个print()里用逗号分开。
 如果你在把PY当计算器使，就不用特意print😂
@@ -107,12 +108,13 @@ range()
 ？？？
 repr()
 ？？？
-reversed()
+【reversed】
 ？？？
-round()：约等于
-直接往里面搁一个数就直接给宁凑整。再加一个数n，就会把数凑整到小数点后n位。四舍六入，五我不到嗷。
+【round】约等于
+四舍六入，五我不到嗷。
+直接往里面搁一个数就直接给宁凑整。再加一个数n，就会把数凑整到小数点后n位。
 比如打round(5.45)、round(5.55,1)分别得5、5.5。
-set()
+【set】
 ？？？
 setattr()
 ？？？
@@ -134,26 +136,23 @@ type()
 ？？？
 vars()
 ？？？
-zip()
+【zip】
 ？？？
 
 1.2 PY数学函数大全（用带'math.'的函数，程序开头加import math）
-abs()：绝对值
+
+【abs】绝对值
 像abs(-3)这种就是取绝对值，但是像abs(2+1j)这样就是取模。
+【math.ceil】上取整、【math.floor】下取整
+【math.comb】
+【math.copysign】
 
-math.ceil,math.floor
-上取整、下取整
-
-math.comb
-
-math.copysign
 
 1.3 PY数学复变函数大全 （用带'cmath.'的函数，程序开头加import cmath）
-complex：复数
+
+【complex】复数
 比如complex(12,34)就是12+34j,也可以直接打12+34j。注意，虚部为1也不能把1省略！！！
-
-数.real,数.imag：实部、虚部
-
-cmath.phase：相位
-
-cmath.polar,cmath.rect：极坐标化、直角坐标化
+【z.real】z的实部、【z.imag】z的虚部
+【cmath.phase】
+相位
+【cmath.polar】极坐标化、【cmath.rect】直角坐标化
