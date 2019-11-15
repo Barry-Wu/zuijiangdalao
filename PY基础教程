@@ -63,7 +63,10 @@ help()
 ？？？
 id()
 ？？？
-__import__()
+【import】导入
+比如用math.floor的时候，math就是一个库，用这个函数前要先导入math库，也就是说，最开头要打个import math。
+导入多个库其实只用写一行（滑稽），比如import cmath,math,matplotlib,numpy。俺不道人家为嘛都要分开写。
+【__import__】
 ？？？
 【input】输入
 输入啥就是啥憋。要在输入框前加提示语，就写成input('提示语')。
@@ -84,9 +87,6 @@ locals()
 ？？？
 map()
 ？？？
-【max】最大值、【min】最小值
-比如输入min(-1,2,3,5,6)得6，输入min(-1,2,3,5,6)得-1。
-实数之间都可以比较。憋整那些复数、矩阵啥的！
 memoryview()
 ？？？
 next()
@@ -95,9 +95,6 @@ object()
 ？？？
 open()
 ？？？
-【pow】幂
-比如pow(3,3)就是3的3次方，27。和直接打3**3一样。
-但是，再加一个数，就变成了除法取余数，比如pow(3,3,5)就是3**3除5的余数，2。
 【print】显示
 你最后想显示啥就把它print出来。
 显示字符的话要在字符外面加个''，连续显示东西的话，在同一个print()里用逗号分开。
@@ -110,10 +107,6 @@ repr()
 ？？？
 【reversed】
 ？？？
-【round】约等于
-四舍六入，五我不到嗷。
-直接往里面搁一个数就直接给宁凑整。再加一个数n，就会把数凑整到小数点后n位。
-比如打round(5.45)、round(5.55,1)分别得5、5.5。
 【set】
 ？？？
 setattr()
@@ -125,8 +118,6 @@ sorted()
 staticmethod()
 ？？？
 str()
-？？？
-sum()
 ？？？
 super()
 ？？？
@@ -145,14 +136,50 @@ vars()
 像abs(-3)这种就是取绝对值，但是像abs(2+1j)这样就是取模。
 【math.ceil】上取整、【math.floor】下取整
 【math.comb】
-【math.copysign】
+【math.copysign(a,b)】符号同化
+让a变成和b正负号相同的数。b是0也会被看成是正数。
+【math.factorial】阶乘
+输入math.factorial(10000)，居然也能秒回。PY真的牛B！打call！
+【math.fmod】求余数
+输入math.fmod(被除数,除数)得余数。什么，你害想要除数？试试int(被除数/除数)喽。
+【math.frexp】2幂分解
+输入math.frexp(x)得(a,b)，使x=a*2^b，有点迷为什么会有这个。之前学过就浮点精度那个公式和这玩意像。
+【math.gcd】最大公因数
+比如输入math.gcd(60,80)得20。你又想求最小公倍数？想一下，a*b/math.gcd(a,b)嘛。
+【math.isclose】误差判断
+math.isclose(a,b,rel_tol=c)代表判断a和b的相对误差是不是小于等于c。它用两数之差除以较大数来计算相对误差。 
+math.isclose(a,b,abs_tol=d)代表判断a和b的绝对误差是不是小于等于d。
+math.isclose(a,b,rel_abs=c,abs_tol=d)代表两个一起用...不敢不敢。
+【math.isfinite】实数裁决、【math.isinf】无穷裁决、【math.isnan】数难裁决
+PY有三类基本的数：实数、无穷、NaN。NaN也叫“数难”，难读随便哪一声，意为不是常数。
+这三个函数分别判断一个数是不是实数、无穷、NaN。
+【max】最大值、【min】最小值
+比如输入min(-1,2,3,5,6)得6，输入min(-1,2,3,5,6)得-1。
+实数之间都可以比较。憋整那些复数、矩阵啥的！
+【pow】幂
+比如pow(3,3)就是3的3次方，27。和直接打3**3一样。
+但是，再加一个数，就变成了除法取余数，比如pow(3,3,5)就是3**3除5的余数，2。
+【round】约等于
+四舍六入，五我不到嗷。
+直接往里面搁一个数就直接给宁凑整。再加一个数n，就会把数凑整到小数点后n位。
+比如打round(5.45)、round(5.55,1)分别得5、5.5。
+【math.sqrt】开平方
+比如math.sqrt(2)是1.414，不过建议直接用x**0.5比较快。
+【sum】数列求和
+比如sum((1,2,3,4,5))是15。多一重括号代表它只会给数列求和。
 
-
-1.3 PY数学复变函数大全 （用带'cmath.'的函数，程序开头加import cmath）
+1.3 PY复变函数大全 （用带'cmath.'的函数，程序开头加import cmath）
 
 【complex】复数
 比如complex(12,34)就是12+34j,也可以直接打12+34j。注意，虚部为1也不能把1省略！！！
-【z.real】z的实部、【z.imag】z的虚部
-【cmath.phase】
-相位
+【z.conjugate()】共轭复数
+比如(12+34j).conjugate()是12-34j。conjugate后面那个括号貌似没用，但是必须要带。
+【cmath.phase】相位
+比如cmath.phase(12+34j)是1.2315，输出的是弧度。据说用atan也一样。
 【cmath.polar】极坐标化、【cmath.rect】直角坐标化
+比如cmath.polar(3+4j)是(5.0, 0.9273)，cmath.rect(1,1)是(0.5403+0.8415j)。都用的弧度制。
+【z.real】z的实部、【z.imag】z的虚部
+比如(12+34j).real是12，(12+34j).imag是34。高中生注意，“虚部”是个系数，没有虚数单位！
+复数本身的括号也要带，不然直接输入12+34j.imag会得到46，因为它先取虚部后加减
+
+其它运算和实数用同样的函数就完事了。
