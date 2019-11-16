@@ -1,4 +1,4 @@
-PY制图教程原装正版：https://docs.python.org/
+PY教程原装正版：https://docs.python.org/
 
 1 PY函数大全
 
@@ -65,9 +65,6 @@ help()
 ？？？
 id()
 ？？？
-【import】导入
-※比如用math.floor的时候，math就是一个库，用这个函数前要先导入math库，也就是说，最开头要打个import math。
-※导入多个库其实只用写一行（滑稽），比如import cmath,math,matplotlib,numpy。俺不道人家为嘛都要分开写。
 【__import__】
 ？？？
 【input】输入
@@ -233,12 +230,31 @@ vars()
 
 2 PY语法从句
 
-if
-
-while
-
-for
-
-try
-
-with
+【assert】
+【break】打断
+【continue】再来
+【del】
+【expr】
+【flow】
+【for】条件循环从句
+【global】
+【if】条件从句
+※用法：
+※if 条件1: 整活1
+※elif 条件2: 整活2
+※elif 条件3: 整活3
+※...
+※elif 条件999: 整活999
+※else 整活1000
+※俺不道是不是最多有一千个整活，干就完了，奥利给。
+【import】导入
+※比如用math.floor的时候，math就是一个库，用这个函数前要先导入math库，也就是说，最开头要打个import math。
+※导入多个库其实只用写一行（滑稽），比如import cmath,math,matplotlib,numpy。俺不道人家为嘛都要分开写。
+【nonlocal】
+【pass】跳过
+【raise】
+【return】
+【try】
+【while】循环从句
+【with】
+【yield】
