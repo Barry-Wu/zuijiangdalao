@@ -1,10 +1,11 @@
 #在w=【...】那输入你想整活的函数，运行就完事了
-
+#先是日常各种导入
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.colors import BoundaryNorm
 from matplotlib.ticker import MaxNLocator
-import numpy as np,math,cmath
+import numpy as np
+#然后是各种日用函数的简化
 def sin(x):return np.sin(x)
 def cos(x):return np.cos(x)
 def tan(x):return np.tan(x)
@@ -17,15 +18,16 @@ r=eval(input('显示半径：'))
 d=r/1000
 x,y=np.mgrid[slice(-r,r,d),slice(-r,r,d)]
 z=x+y*1j
-w=【...】#此处输入函数
+w=z.real
 
 w=w[:-1,:-1]
 levels = MaxNLocator(nbins=15).tick_values(w.min(),w.max())
-fig,pic = plt.subplots()
+bar,pic = plt.subplots()
+pic.set_aspect(1)   #长宽比为1
 mode=eval(input('上色模式：0=彩虹,1=棱镜。选'))
 if mode==1:
-    bar = pic.pcolormesh(x,y,w,cmap=plt.get_cmap('prism'))
+    plot = pic.pcolormesh(x,y,w,cmap=plt.get_cmap('prism'))
 else:
-    bar = pic.pcolormesh(x,y,w,cmap=plt.get_cmap('jet'))
-fig.colorbar(bar,ax=pic)
+    plot = pic.pcolormesh(x,y,w,cmap=plt.get_cmap('jet'))
+bar.colorbar(plot,ax=pic)
 plt.show()
