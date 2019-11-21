@@ -6,6 +6,8 @@ from matplotlib.colors import BoundaryNorm
 from matplotlib.ticker import MaxNLocator
 import numpy as np
 #然后是各种日用函数的简化
+def ceil(x):return np.ceil(x)
+def floor(x):return np.floor(x)
 def sin(x):return np.sin(x)
 def cos(x):return np.cos(x)
 def tan(x):return np.tan(x)
@@ -13,18 +15,21 @@ def e(x):return np.exp(x)
 def arg(x):return np.angle(x)
 def Re(x):return x.real
 def Im(x):return x.imag
+def logic(x):
+    if x:return 1
+    else:return 0
 
 r=eval(input('显示半径：'))
 d=r/1000
 x,y=np.mgrid[slice(-r,r,d),slice(-r,r,d)]
 z=x+y*1j
-w=z.real
+w=【】	#填想整活的公式
 
 w=w[:-1,:-1]
 levels = MaxNLocator(nbins=15).tick_values(w.min(),w.max())
 bar,pic = plt.subplots()
-pic.set_aspect(1)   #长宽比为1
-mode=eval(input('上色模式：0=彩虹,1=棱镜。选'))
+pic.set_aspect(1)	#长宽比为1
+mode=eval(input('【】'))	#给图像取个标题，加$^n$是n次幂, 加r'$\frac{}{}$'是分数
 if mode==1:
     plot = pic.pcolormesh(x,y,w,cmap=plt.get_cmap('prism'))
 else:
