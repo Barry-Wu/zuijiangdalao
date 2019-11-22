@@ -1,4 +1,4 @@
-#在w=【...】那输入你想整活的函数，运行就完事了
+#在每个【...】内填入注释中要求的内容，运行就完事了
 #先是日常各种导入
 import matplotlib
 import matplotlib.pyplot as plt
@@ -24,18 +24,17 @@ r=【2】	#第2空填图片的显示半径
 title='【3】'	#第3空填图像的标题，加$^n$是n次幂, 加r'$\frac{}{}$'是分数
 mode=【4】	#第4空填上色模式：填0为彩虹，填1为棱镜
 #正片开始
-d=r/1000
+d=r/1000	#正片开始
 x,y=np.mgrid[slice(-r,r,d),slice(-r,r,d)]
 z=x+y*1j	#复数单位
 w=f(x,y)
 w=w[:-1,:-1]
 levels = MaxNLocator(nbins=15).tick_values(w.min(),w.max())
-bar,pic = plt.subplots()
-pic.set_title(title)
-pic.set_aspect(1)	#图片的长宽比为1
-if mode==1:
-    plot = pic.pcolormesh(x,y,w,cmap=plt.get_cmap('prism'))
-else:
-    plot = pic.pcolormesh(x,y,w,cmap=plt.get_cmap('jet'))
+bar,pic = plt.subplots()	#只画一张图片
+pic.set_title(title)	#设置图片的标题
+pic.set_aspect(1)	#设置图片的长宽比为1
+if mode==1:mode='prism'
+else:mode='jet'
+plot = pic.pcolormesh(x,y,w,cmap=plt.get_cmap(mode))
 bar.colorbar(plot,ax=pic)
 plt.show()
