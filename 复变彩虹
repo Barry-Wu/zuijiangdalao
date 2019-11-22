@@ -18,18 +18,21 @@ def Im(x):return x.imag
 def logic(x):
     if x:return 1
     else:return 0
-
-r=eval(input('显示半径：'))
+#然后是设置了嗷
+def f(x,y):return 【1】	#第1空填想整活的公式
+r=【2】	#第2空填图片的显示半径
+title='【3】'	#第3空填图像的标题，加$^n$是n次幂, 加r'$\frac{}{}$'是分数
+mode=【4】	#第4空填上色模式：填0为彩虹，填1为棱镜
+#正片开始
 d=r/1000
 x,y=np.mgrid[slice(-r,r,d),slice(-r,r,d)]
-z=x+y*1j
-w=【】	#填想整活的公式
-
+z=x+y*1j	#复数单位
+w=f(x,y)
 w=w[:-1,:-1]
 levels = MaxNLocator(nbins=15).tick_values(w.min(),w.max())
 bar,pic = plt.subplots()
-pic.set_aspect(1)	#长宽比为1
-mode=eval(input('【】'))	#给图像取个标题，加$^n$是n次幂, 加r'$\frac{}{}$'是分数
+pic.set_title(title)
+pic.set_aspect(1)	#图片的长宽比为1
 if mode==1:
     plot = pic.pcolormesh(x,y,w,cmap=plt.get_cmap('prism'))
 else:
