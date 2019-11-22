@@ -1,11 +1,15 @@
 #在每个【...】内填入注释中要求的内容，运行就完事了
-#先是日常各种导入
+def f(x,y):return 【1】	#第1空填想整活的公式
+r=【2】	#第2空填图片的显示半径
+title='【3】'	#第3空填图像的标题，加$^n$是n次幂, 加r'$\frac{}{}$'是分数
+mode=【4】	#第4空填上色模式：填0为彩虹，填1为棱镜
+#然后是日常各种导入
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.colors import BoundaryNorm
 from matplotlib.ticker import MaxNLocator
 import numpy as np
-#然后是各种日用函数的简化
+#再然后是各种日用函数的简化
 def ceil(x):return np.ceil(x)
 def floor(x):return np.floor(x)
 def sin(x):return np.sin(x)
@@ -18,11 +22,6 @@ def Im(x):return x.imag
 def logic(x):
     if x:return 1
     else:return 0
-#然后是设置了嗷
-def f(x,y):return 【1】	#第1空填想整活的公式
-r=【2】	#第2空填图片的显示半径
-title='【3】'	#第3空填图像的标题，加$^n$是n次幂, 加r'$\frac{}{}$'是分数
-mode=【4】	#第4空填上色模式：填0为彩虹，填1为棱镜
 #正片开始
 d=r/1000	#正片开始
 x,y=np.mgrid[slice(-r,r,d),slice(-r,r,d)]
