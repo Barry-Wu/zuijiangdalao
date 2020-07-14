@@ -15,4 +15,4 @@ jobs:
        run: |
         pip install pytest
         pip install pytest-cov
-        pytest /home/runner/work/zuijiangdalao/zuijiangdalao/程序练习生/Python练习生.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+        pytest /home/runner/work/zuijiangdalao/zuijiangdalao/程序练习生/Python练习生.py --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
