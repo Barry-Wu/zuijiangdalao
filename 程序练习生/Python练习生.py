@@ -1,6 +1,6 @@
-import random as *	#老三样之随机
-import time as *	#老三样之时间
-import turtle as *	#老三样之乌龟
+from random import *	#老三样之随机
+from time import *	#老三样之时间
+from turtle import *	#老三样之乌龟
 
 #组类型篇
 #随机密码挑战
