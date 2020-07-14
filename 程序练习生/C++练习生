@@ -92,7 +92,7 @@ public:
 			if(!a.IsMemberOf(b.element[i]))return 0;
 		return 1;
 	}
-	void Intersection(intSet a,intSet b)	//求交集的函数
+	void Intersection(intSet a,intSet b)	//求交集的函数，整了一晚上都不对劲，最后发现是i串味了，所以现在每个函数都定了自己的i
 	{
 		int i;
 		Empty();
@@ -100,7 +100,7 @@ public:
 		for(i=0;i<=E;i++)
 			if(!b.IsMemberOf(element[i]))Sub(element[i]);
 	}
-	void Merge(intSet a,intSet b)			//求并集的函数
+	void Merge(intSet a,intSet b)			//求并集的函数，和上面一样遇到过i串味的情况
 	{
 		int i;
 		Empty();
