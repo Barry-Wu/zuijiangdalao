@@ -1,8 +1,9 @@
-on:push
+on: push
 jobs:
   job0:
-    runs-on:windows-latest
+    runs-on: windows-latest
     steps:
+    - name: Print a greeting
       env:
         MY_VAR: Hi there! My name is
         FIRST_NAME: Mona
