@@ -26,4 +26,4 @@ def randomcode():
 		codelist.append(code)
 	return codelist
 #主运行区：
-randomcode()
+print(randomcode())
