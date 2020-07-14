@@ -13,17 +13,17 @@ def randomcode():
 	codelist=[]
 	#往字表里塞字母
 	for i in range(26):
-		letter+=chr(ord('A')+i-1)
-		letter+=chr(ord('a')+i-1)
+		letter+=chr(ord('A')+i)
+		letter+=chr(ord('a')+i)
 	#往字表里塞9个数字
 	for i in range(9):
-		letter+=chr(ord('0')+i)
+		letter+=chr(ord('1')+i)
 	#往密码表里塞密码
 	for i in range(10):
-		code=""
+		code=''
 		for j in range(8):
-			""+=choice(codelist)
-		codelist+=code
+			code+=choice(letter)
+		codelist.append(code)
 	return codelist
-	
-print(randomcode())
+#主运行区：
+randomcode()
