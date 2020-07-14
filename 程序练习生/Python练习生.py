@@ -13,11 +13,11 @@ def randomcode():
 	codelist=[]
 	#往字表里塞字母
 	for i in range(26):
-		letter+=chr(ord'A'+i-1)
-		letter+=chr(ord'a'+i-1)
+		letter+=chr(ord('A')+i-1)
+		letter+=chr(ord('a')+i-1)
 	#往字表里塞9个数字
 	for i in range(9):
-		letter+=chr(ord'0'+i)
+		letter+=chr(ord('0')+i)
 	#往密码表里塞密码
 	for i in range(10):
 		code=""
