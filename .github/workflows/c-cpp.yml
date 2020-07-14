@@ -1,10 +1,12 @@
-name: C/C++ CI
-
-on: [push]
-
+on:push
 jobs:
-  ubuntu-build:
-    runs-on: ubuntu-latest
+  job0:
+    runs-on:windows-latest
     steps:
-      - name: Build C++ project
-        uses: nicledomaS/cmake_build_action@v1
+      env:
+        MY_VAR: Hi there! My name is
+        FIRST_NAME: Mona
+        MIDDLE_NAME: The
+        LAST_NAME: Octocat
+      run: |
+        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
