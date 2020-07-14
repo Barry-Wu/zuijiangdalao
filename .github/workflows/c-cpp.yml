@@ -10,4 +10,4 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: Barry-Wu/zuijiangdalao/程序练习生/C练习生.c
+      - uses: .github/程序练习生/C练习生.c
