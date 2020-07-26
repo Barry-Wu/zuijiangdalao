@@ -8,8 +8,7 @@
 |[x-lny]%7|![](https://latex.codecogs.com/gif.latex?%5Bx-lny%5D%257)|[链接](http://ys-e.ys168.com/605869647/kgbtxTl853J6J6329P45/[x-lny]余7.png)|
 |[xlny]%7|![](https://latex.codecogs.com/gif.latex?%5Bxlny%5D%257)|[链接](http://ys-e.ys168.com/605869647/kgbtxTl853J6J6329P44/[xlny]余7.png)|
 |[x÷lny]%7|![](https://latex.codecogs.com/gif.latex?%5B%5Cfrac%7Bx%7D%7Blny%7D%5D%257)|[链接](http://ys-e.ys168.com/605869647/kgbtxTl853J6J6329P43/[x÷lny]余7.png)|
-## 说明
-白=0，红=1，黄=2，绿=3，青=4，蓝=5，粉=6，黑=无
+说明：白=0，红=1，黄=2，绿=3，青=4，蓝=5，粉=6，黑=无
 ----
 ## 三天之前
 我向婆祖许愿，要一个能让苍生三天之内学会做人工智能的圣经。婆祖说，不行，三天之内谁学的完啊？
