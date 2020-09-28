@@ -30,14 +30,11 @@ int(eval(input("算式：")))	#同上，也是加不加print都行的简易代�
 
 ##下面这段代码能够获得用户输入的一个整数N，计算并输出1到N相加的和。然而，这段代码存在多处语法错误，请指出错误所在并纠正。
 ##改正后：
-#input后是字符串，补上eval才是数；原句后面有顿号，C语言厨狂喜，py厨激怒
-n=eval(input("请输入整数N："))
+n=eval(input("请输入整数N："))	#input后是字符串，补上eval才是数；原句后面有顿号，C语言厨狂喜，py厨激怒
 sum=0
-#判断句要加引号
-for i in range(n):
+for i in range(n):	#判断句要加引号
     sum+=i+1
-#用.format要配大括号
-print("1到N求和结果：{}".format(sum))
+print("1到N求和结果：{}".format(sum))	#用.format要配大括号
 
 
 #组合集合篇
