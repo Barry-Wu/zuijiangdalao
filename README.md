@@ -1,14 +1,6 @@
 # 最犟大佬官网
-## 最近更新：七余函数一览
-|名称|公式|图片|
-|----|----|----|
-|[(x+y)<sup>ln｜x-y｜</sup>]%7|![](https://latex.codecogs.com/gif.latex?%5B%28x&plus;y%29%5E%7Bln%7Cx-y%7C%7D%5D%257)|[链接](http://ys-k.ys168.com/605869610/r524K7H386IMM6kdeuwP/[(x%20y)%5Eln│x-y│]余7.png)|
-|[lnxlny]%7|![](https://latex.codecogs.com/gif.latex?%5Blnx%5Ccdot%20lny%5D%257)|[链接](http://ys-e.ys168.com/605869657/mccxwRl853J6J62HMP6/[lnxlny]余7.png)|
-|[x+lny]%7|![](https://latex.codecogs.com/gif.latex?%5Bx&plus;lny%5D%257)|[链接](http://ys-e.ys168.com/605869647/kgbtxTl853J6J6329P42/[x＋lny]余7.png)|
-|[x-lny]%7|![](https://latex.codecogs.com/gif.latex?%5Bx-lny%5D%257)|[链接](http://ys-e.ys168.com/605869647/kgbtxTl853J6J6329P45/[x-lny]余7.png)|
-|[xlny]%7|![](https://latex.codecogs.com/gif.latex?%5Bxlny%5D%257)|[链接](http://ys-e.ys168.com/605869647/kgbtxTl853J6J6329P44/[xlny]余7.png)|
-|[x÷lny]%7|![](https://latex.codecogs.com/gif.latex?%5B%5Cfrac%7Bx%7D%7Blny%7D%5D%257)|[链接](http://ys-e.ys168.com/605869647/kgbtxTl853J6J6329P43/[x÷lny]余7.png)|
-说明：白=0，红=1，黄=2，绿=3，青=4，蓝=5，粉=6，黑=无
+## 最近更新：求 极 限
+\lim_{x\to0}(\frac{a^x+b^x+c^x}{3})^\frac{1}{x}
 ----
 ## 三天之前
 我向婆祖许愿，要一个能让苍生三天之内学会做人工智能的圣经。婆祖说，不行，三天之内谁学的完啊？
