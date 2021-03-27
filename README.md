@@ -32,13 +32,15 @@
 
 </table># 链接
 LaTeX公式编辑器：用妈宝叔的就行了
-
 Matplotlib宝典：https://matplotlib.org/index.html
-
 Markdown在线编辑器：https://www.mdeditor.com
-
 NumPy+SciPy宝典：https://docs.scipy.org
-
 Python宝典：https://docs.python.org
-
 SymPy宝典：https://docs.sympy.org
+# Trivia
+•github上的都是计算机/电信/软件大佬和程序猿，俺一个机电萌新被大佬围观，瑟瑟发抖(/ω＼)
+•除了你群某小伙喜欢画数学图像，俺也喜欢用matplotlib和PIL画抽象图像（
+•微专业（信息工程•人工智能）的第一弹是计算机视觉，我们组四菜懂不起，之后的数字图像处理选修课才知道卷积核，机器人选修课才学了平移旋转矩阵
+•第二弹是数据挖掘，带作业就用了最简单的kNN，老师还满意
+•第三弹是深度学习，这学期在学，，，
+•unity、gamemaker、flash老三样留着
