@@ -1,5 +1,4 @@
-# 最犟大佬官网
-## 最近更新：求 极 限
+# 最近更新：求 极 限
 # 常用公式
 |名称|公式|
 |-|-|
@@ -134,30 +133,8 @@ with tf.Session() as sess: #创建会话
 |`tf.real`|实部|
 |`tf.imag`|虚部|
 
-注：
-
-1.使用函数的时候一定要尽量使用浮点数！
-
-2.科学取整是指四舍六入五凑偶
-
-3.上述一些函数的公式
-
-|名称|公式|
-|-|-|
-|双曲正弦函数|sinh(x)=(e<sup>x</sup>-e<sup>-x</sup>)/2|
-|双曲余弦函数|cosh(x)=(e<sup>x</sup>+e<sup>-x</sup>)/2|
-|双曲正切函数|tanh(x)=(e<sup>x</sup>-e<sup>-x</sup>)/(e<sup>x</sup>+e<sup>-x</sup>)|
-|S型函数|sigmoid(x)=1/(1+e<sup>-x</sup>)|
-|误差函数|erf(x)=(2/√π)∫<sub>0</sub><sup>x</sup>e<sup>-x²</sup>dx|
-|误差余函数|erfc(x)=erf(x)=(2/√π)∫<sub>x</sub><sup>∞</sup>e<sup>-x²</sup>dx|
-
-这就和指数函数e<sup>x</sup>过不去了是吧...
-### 第二天
-
-### 第三天
-
 ## 链接
-LaTeX在线:吴文中数学公式编辑器：http://latex.91maths.com
+LaTeX公式编辑器：用妈宝叔的就行了
 
 Matplotlib宝典：https://matplotlib.org/index.html
 
